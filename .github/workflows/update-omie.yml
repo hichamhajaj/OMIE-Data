@@ -3,7 +3,7 @@ name: Update OMIE prices
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "15 14 * * *"
 
 permissions:
   contents: write
@@ -11,6 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,6 +21,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: pip install requests
+
       - name: Run script
         run: python update_prices.py
 
@@ -27,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add .
+          git add docs/latest.json docs/precios/*.json
           git commit -m "update prices" || echo "no changes"
           git push
