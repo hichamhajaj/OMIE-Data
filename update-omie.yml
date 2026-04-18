@@ -1,0 +1,34 @@
+name: Update OMIE prices
+
+on:
+  schedule:
+    # 13:40 UTC = 15:40 en Madrid durante horario de verano.
+    # Ajusta si quieres otro margen.
+    - cron: '40 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate JSON
+        run: python scripts/update_prices.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "Update OMIE prices"
+          git push
