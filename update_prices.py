@@ -1,53 +1,58 @@
-import requests
 import json
 from pathlib import Path
 from datetime import date
+import requests
 
-today = date.today().strftime("%Y%m%d")
+today = date.today()
+today_str = today.strftime("%Y%m%d")
 
-versions = ["1", "2", "3"]
 content = None
+last_url = None
 
-for version in versions:
-url = f"https://www.omie.es/sites/default/files/dados/AGNO_{today[:4]}/MES_{today[4:6]}/TXT/marginalpdbc_{today}.{version}"
-r = requests.get(url)
-
-```
-if r.status_code == 200:
-    content = r.text
-    break
-```
+for version in ["1", "2", "3"]:
+    url = (
+        f"https://www.omie.es/sites/default/files/dados/AGNO_{today_str[:4]}/"
+        f"MES_{today_str[4:6]}/TXT/marginalpdbc_{today_str}.{version}"
+    )
+    last_url = url
+    response = requests.get(url, timeout=30)
+    if response.status_code == 200 and response.text.strip():
+        content = response.text
+        break
 
 if not content:
-raise Exception("No se pudo descargar OMIE")
-
-lines = content.splitlines()
+    raise RuntimeError(f"No se pudo descargar OMIE. Última URL probada: {last_url}")
 
 prices = []
 
-for line in lines:
-parts = line.split(";")
+for line in content.splitlines():
+    parts = line.strip().split(";")
 
-```
-if len(parts) >= 6 and parts[0] == "MARGINALPDBC":
-    try:
-        hour = int(parts[4])
-        price = float(parts[6].replace(",", "."))
-
-        prices.append({
-            "hour": hour,
-            "price_eur_mwh": price,
-            "price_eur_kwh": round(price / 1000, 5)
-        })
-
-    except:
+    if not parts or parts[0] != "MARGINALPDBC":
         continue
-```
+
+    # Formato esperado:
+    # MARGINALPDBC;YYYY;MM;DD;HORA;MarginalPT;MarginalES;
+    if len(parts) >= 7:
+        try:
+            hour = int(parts[4])
+            price_es = float(parts[6].replace(",", "."))
+            prices.append({
+                "hour": hour,
+                "price_eur_mwh": price_es,
+                "price_eur_kwh": round(price_es / 1000, 5)
+            })
+        except ValueError:
+            continue
+
+if not prices:
+    raise RuntimeError("No se encontraron precios en el fichero descargado.")
 
 data = {
-"date": str(date.today()),
-"source": "OMIE",
-"prices": prices
+    "date": str(today),
+    "source": "OMIE",
+    "count": len(prices),
+    "prices": prices
 }
 
 docs_dir = Path("docs")
@@ -56,10 +61,11 @@ docs_dir.mkdir(exist_ok=True)
 precios_dir = docs_dir / "precios"
 precios_dir.mkdir(exist_ok=True)
 
-with open(docs_dir / "latest.json", "w", encoding="utf-8") as f:
-json.dump(data, f, ensure_ascii=False, indent=2)
+latest_path = docs_dir / "latest.json"
+history_path = precios_dir / f"{today}.json"
 
-with open(precios_dir / f"{date.today()}.json", "w", encoding="utf-8") as f:
-json.dump(data, f, ensure_ascii=False, indent=2)
+latest_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+history_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-print("JSON generado correctamente")
+print(f"Generado: {latest_path}")
+print(f"Generado: {history_path}")
