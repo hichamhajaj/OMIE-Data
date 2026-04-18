@@ -1,8 +1,7 @@
 import json
 import re
 from pathlib import Path
-from datetime import date
-
+from datetime import date, datetime
 import requests
 
 LIST_URL = (
@@ -26,13 +25,29 @@ session.headers.update(
 
 today = date.today()
 today_str = today.strftime("%Y%m%d")
+now = datetime.now()
+current_hour = now.hour + 1  # OMIE usa 1..24 normalmente
+
+
+def get_level(price: float, min_price: float, max_price: float) -> str:
+    if max_price == min_price:
+        return "medium"
+
+    ratio = (price - min_price) / (max_price - min_price)
+
+    if ratio <= 0.33:
+        return "cheap"
+    if ratio <= 0.66:
+        return "medium"
+    return "expensive"
+
 
 # 1) Leer el índice público
 index_resp = session.get(LIST_URL, timeout=30)
 index_resp.raise_for_status()
 index_html = index_resp.text
 
-# 2) Intentar coger el fichero de hoy; si no, el más reciente del índice
+# 2) Buscar fichero de hoy; si no existe, usar el más reciente visible
 pattern_today = rf"marginalpdbc_{today_str}\.\d+"
 matches_today = re.findall(pattern_today, index_html)
 
@@ -44,7 +59,7 @@ else:
         raise RuntimeError("No se encontró ningún fichero marginalpdbc en el índice público de OMIE.")
     filename = all_files[0]
 
-# 3) Descargar el fichero real
+# 3) Descargar fichero
 file_resp = session.get(
     DOWNLOAD_URL,
     params={"filename": filename, "parents": "marginalpdbc"},
@@ -65,8 +80,7 @@ for raw_line in content.splitlines():
 
     parts = [p.strip() for p in line.split(";")]
 
-    # Saltar cabeceras, títulos y líneas no numéricas
-    # Las filas de datos empiezan por año, ej: 2026;04;18;1;...
+    # Filas de datos: YYYY;MM;DD;HORA;PT;ES;
     if len(parts) < 6:
         continue
     if not re.fullmatch(r"\d{4}", parts[0] or ""):
@@ -88,8 +102,9 @@ for raw_line in content.splitlines():
             "month": month,
             "day": day,
             "hour": hour,
-            "price_pt_eur_mwh": price_pt,
-            "price_es_eur_mwh": price_es,
+            "hour_label": f"{hour:02d}:00",
+            "price_pt_eur_mwh": round(price_pt, 2),
+            "price_es_eur_mwh": round(price_es, 2),
             "price_es_eur_kwh": round(price_es / 1000, 5),
         }
     )
@@ -97,11 +112,46 @@ for raw_line in content.splitlines():
 if not prices:
     raise RuntimeError(f"Se descargó el fichero {filename}, pero no se pudieron extraer precios.")
 
+# Orden por hora por seguridad
+prices.sort(key=lambda x: x["hour"])
+
+min_item = min(prices, key=lambda x: x["price_es_eur_kwh"])
+max_item = max(prices, key=lambda x: x["price_es_eur_kwh"])
+average_price = round(sum(p["price_es_eur_kwh"] for p in prices) / len(prices), 5)
+
+# Añadir nivel cheap/medium/expensive a cada hora
+for item in prices:
+    item["level"] = get_level(
+        item["price_es_eur_kwh"],
+        min_item["price_es_eur_kwh"],
+        max_item["price_es_eur_kwh"],
+    )
+
+current_item = next((p for p in prices if p["hour"] == current_hour), None)
+next_item = next((p for p in prices if p["hour"] == current_hour + 1), None)
+
 data = {
     "date": str(today),
     "source": "OMIE",
     "filename": filename,
+    "updated_at": datetime.now().isoformat(),
     "count": len(prices),
+    "current_hour": current_hour,
+    "current_price": current_item["price_es_eur_kwh"] if current_item else None,
+    "next_price": next_item["price_es_eur_kwh"] if next_item else None,
+    "average_price": average_price,
+    "min_price": min_item["price_es_eur_kwh"],
+    "max_price": max_item["price_es_eur_kwh"],
+    "cheapest_hour": {
+        "hour": min_item["hour"],
+        "hour_label": min_item["hour_label"],
+        "price": min_item["price_es_eur_kwh"],
+    },
+    "most_expensive_hour": {
+        "hour": max_item["hour"],
+        "hour_label": max_item["hour_label"],
+        "price": max_item["price_es_eur_kwh"],
+    },
     "prices": prices,
 }
 
