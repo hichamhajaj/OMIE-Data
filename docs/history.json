@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-04-18T17:39:19.508647",
+  "days_count": 1,
+  "days": [
+    {
+      "date": "2026-04-18",
+      "average_price": 0.04656,
+      "min_price": -0.0021,
+      "max_price": 0.10765,
+      "cheapest_hour": {
+        "hour": 55,
+        "hour_label": "54:00-24:00",
+        "price": -0.0021
+      },
+      "most_expensive_hour": {
+        "hour": 1,
+        "hour_label": "00:00-01:00",
+        "price": 0.10765
+      }
+    }
+  ]
+}
