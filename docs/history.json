@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-27T20:23:32.048950",
-  "days_count": 40,
+  "updated_at": "2026-05-28T16:36:43.989187",
+  "days_count": 41,
   "days": [
     {
       "date": "2026-04-18",
@@ -640,6 +640,22 @@
         "hour": 87,
         "hour_label": "86:00-24:00",
         "price": 0.146
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "average_price": 0.07498,
+      "min_price": 0.0,
+      "max_price": 0.1725,
+      "cheapest_hour": {
+        "hour": 48,
+        "hour_label": "47:00-24:00",
+        "price": 0.0
+      },
+      "most_expensive_hour": {
+        "hour": 87,
+        "hour_label": "86:00-24:00",
+        "price": 0.1725
       }
     }
   ]
