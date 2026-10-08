@@ -2,10 +2,10 @@
   "date": "2026-10-08",
   "source": "OMIE",
   "filename": "marginalpdbc_20261008.1",
-  "updated_at": "2026-10-08T18:55:14.559246",
+  "updated_at": "2026-10-08T23:05:41.758648",
   "count": 96,
   "summary": {
-    "current_hour": 19,
+    "current_hour": 24,
     "current_price": 0.12968,
     "next_price": 0.12968,
     "average_price": 0.1069,
