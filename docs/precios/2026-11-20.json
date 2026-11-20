@@ -1,0 +1,1239 @@
+{
+  "date": "2026-11-20",
+  "source": "OMIE",
+  "filename": "marginalpdbc_20261120.1",
+  "updated_at": "2026-11-20T00:24:19.523658",
+  "count": 96,
+  "summary": {
+    "current_hour": 1,
+    "current_price": 0.06081,
+    "next_price": 0.05813,
+    "average_price": 0.14171,
+    "min_price": 0.05674,
+    "max_price": 0.3,
+    "cheapest_hour": {
+      "hour": 8,
+      "hour_label": "07:00-08:00",
+      "price": 0.05674
+    },
+    "most_expensive_hour": {
+      "hour": 72,
+      "hour_label": "71:00-24:00",
+      "price": 0.3
+    }
+  },
+  "insights": {
+    "best_hours_1h": [
+      {
+        "hour": 8,
+        "hour_label": "07:00-08:00",
+        "price": 0.05674,
+        "level": "cheap"
+      },
+      {
+        "hour": 6,
+        "hour_label": "05:00-06:00",
+        "price": 0.05716,
+        "level": "cheap"
+      },
+      {
+        "hour": 7,
+        "hour_label": "06:00-07:00",
+        "price": 0.05716,
+        "level": "cheap"
+      },
+      {
+        "hour": 9,
+        "hour_label": "08:00-09:00",
+        "price": 0.05716,
+        "level": "cheap"
+      },
+      {
+        "hour": 10,
+        "hour_label": "09:00-10:00",
+        "price": 0.05716,
+        "level": "cheap"
+      }
+    ],
+    "best_blocks_2h": [
+      {
+        "start_hour": 7,
+        "end_hour": 8,
+        "start_label": "06:00-07:00",
+        "end_label": "07:00-08:00",
+        "hours": [
+          7,
+          8
+        ],
+        "average_price": 0.05695
+      },
+      {
+        "start_hour": 8,
+        "end_hour": 9,
+        "start_label": "07:00-08:00",
+        "end_label": "08:00-09:00",
+        "hours": [
+          8,
+          9
+        ],
+        "average_price": 0.05695
+      },
+      {
+        "start_hour": 6,
+        "end_hour": 7,
+        "start_label": "05:00-06:00",
+        "end_label": "06:00-07:00",
+        "hours": [
+          6,
+          7
+        ],
+        "average_price": 0.05716
+      },
+      {
+        "start_hour": 9,
+        "end_hour": 10,
+        "start_label": "08:00-09:00",
+        "end_label": "09:00-10:00",
+        "hours": [
+          9,
+          10
+        ],
+        "average_price": 0.05716
+      },
+      {
+        "start_hour": 5,
+        "end_hour": 6,
+        "start_label": "04:00-05:00",
+        "end_label": "05:00-06:00",
+        "hours": [
+          5,
+          6
+        ],
+        "average_price": 0.05736
+      }
+    ],
+    "best_blocks_3h": [
+      {
+        "start_hour": 6,
+        "end_hour": 8,
+        "start_label": "05:00-06:00",
+        "end_label": "07:00-08:00",
+        "hours": [
+          6,
+          7,
+          8
+        ],
+        "average_price": 0.05702
+      },
+      {
+        "start_hour": 7,
+        "end_hour": 9,
+        "start_label": "06:00-07:00",
+        "end_label": "08:00-09:00",
+        "hours": [
+          7,
+          8,
+          9
+        ],
+        "average_price": 0.05702
+      },
+      {
+        "start_hour": 8,
+        "end_hour": 10,
+        "start_label": "07:00-08:00",
+        "end_label": "09:00-10:00",
+        "hours": [
+          8,
+          9,
+          10
+        ],
+        "average_price": 0.05702
+      },
+      {
+        "start_hour": 5,
+        "end_hour": 7,
+        "start_label": "04:00-05:00",
+        "end_label": "06:00-07:00",
+        "hours": [
+          5,
+          6,
+          7
+        ],
+        "average_price": 0.05729
+      },
+      {
+        "start_hour": 9,
+        "end_hour": 11,
+        "start_label": "08:00-09:00",
+        "end_label": "10:00-11:00",
+        "hours": [
+          9,
+          10,
+          11
+        ],
+        "average_price": 0.05729
+      }
+    ],
+    "cheap_hours_count": 53,
+    "medium_hours_count": 22,
+    "expensive_hours_count": 21
+  },
+  "prices": [
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 1,
+      "hour_label": "00:00-01:00",
+      "price_pt_eur_mwh": 60.81,
+      "price_es_eur_mwh": 60.81,
+      "price_es_eur_kwh": 0.06081,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 2,
+      "hour_label": "01:00-02:00",
+      "price_pt_eur_mwh": 58.13,
+      "price_es_eur_mwh": 58.13,
+      "price_es_eur_kwh": 0.05813,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 3,
+      "hour_label": "02:00-03:00",
+      "price_pt_eur_mwh": 57.77,
+      "price_es_eur_mwh": 57.77,
+      "price_es_eur_kwh": 0.05777,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 4,
+      "hour_label": "03:00-04:00",
+      "price_pt_eur_mwh": 57.66,
+      "price_es_eur_mwh": 57.66,
+      "price_es_eur_kwh": 0.05766,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 5,
+      "hour_label": "04:00-05:00",
+      "price_pt_eur_mwh": 57.55,
+      "price_es_eur_mwh": 57.55,
+      "price_es_eur_kwh": 0.05755,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 6,
+      "hour_label": "05:00-06:00",
+      "price_pt_eur_mwh": 57.16,
+      "price_es_eur_mwh": 57.16,
+      "price_es_eur_kwh": 0.05716,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 7,
+      "hour_label": "06:00-07:00",
+      "price_pt_eur_mwh": 57.16,
+      "price_es_eur_mwh": 57.16,
+      "price_es_eur_kwh": 0.05716,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 8,
+      "hour_label": "07:00-08:00",
+      "price_pt_eur_mwh": 56.74,
+      "price_es_eur_mwh": 56.74,
+      "price_es_eur_kwh": 0.05674,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 9,
+      "hour_label": "08:00-09:00",
+      "price_pt_eur_mwh": 57.16,
+      "price_es_eur_mwh": 57.16,
+      "price_es_eur_kwh": 0.05716,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 10,
+      "hour_label": "09:00-10:00",
+      "price_pt_eur_mwh": 57.16,
+      "price_es_eur_mwh": 57.16,
+      "price_es_eur_kwh": 0.05716,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 11,
+      "hour_label": "10:00-11:00",
+      "price_pt_eur_mwh": 57.55,
+      "price_es_eur_mwh": 57.55,
+      "price_es_eur_kwh": 0.05755,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 12,
+      "hour_label": "11:00-12:00",
+      "price_pt_eur_mwh": 57.55,
+      "price_es_eur_mwh": 57.55,
+      "price_es_eur_kwh": 0.05755,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 13,
+      "hour_label": "12:00-13:00",
+      "price_pt_eur_mwh": 57.66,
+      "price_es_eur_mwh": 57.66,
+      "price_es_eur_kwh": 0.05766,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 14,
+      "hour_label": "13:00-14:00",
+      "price_pt_eur_mwh": 57.77,
+      "price_es_eur_mwh": 57.77,
+      "price_es_eur_kwh": 0.05777,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 15,
+      "hour_label": "14:00-15:00",
+      "price_pt_eur_mwh": 57.99,
+      "price_es_eur_mwh": 57.99,
+      "price_es_eur_kwh": 0.05799,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 16,
+      "hour_label": "15:00-16:00",
+      "price_pt_eur_mwh": 60.0,
+      "price_es_eur_mwh": 60.0,
+      "price_es_eur_kwh": 0.06,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 17,
+      "hour_label": "16:00-17:00",
+      "price_pt_eur_mwh": 60.0,
+      "price_es_eur_mwh": 60.0,
+      "price_es_eur_kwh": 0.06,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 18,
+      "hour_label": "17:00-18:00",
+      "price_pt_eur_mwh": 60.0,
+      "price_es_eur_mwh": 60.0,
+      "price_es_eur_kwh": 0.06,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 19,
+      "hour_label": "18:00-19:00",
+      "price_pt_eur_mwh": 60.55,
+      "price_es_eur_mwh": 60.55,
+      "price_es_eur_kwh": 0.06055,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 20,
+      "hour_label": "19:00-20:00",
+      "price_pt_eur_mwh": 60.68,
+      "price_es_eur_mwh": 60.68,
+      "price_es_eur_kwh": 0.06068,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 21,
+      "hour_label": "20:00-21:00",
+      "price_pt_eur_mwh": 60.81,
+      "price_es_eur_mwh": 60.81,
+      "price_es_eur_kwh": 0.06081,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 22,
+      "hour_label": "21:00-22:00",
+      "price_pt_eur_mwh": 61.2,
+      "price_es_eur_mwh": 61.2,
+      "price_es_eur_kwh": 0.0612,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 23,
+      "hour_label": "22:00-23:00",
+      "price_pt_eur_mwh": 65.2,
+      "price_es_eur_mwh": 65.2,
+      "price_es_eur_kwh": 0.0652,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 24,
+      "hour_label": "23:00-24:00",
+      "price_pt_eur_mwh": 74.7,
+      "price_es_eur_mwh": 74.7,
+      "price_es_eur_kwh": 0.0747,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 25,
+      "hour_label": "24:00-24:00",
+      "price_pt_eur_mwh": 77.4,
+      "price_es_eur_mwh": 77.4,
+      "price_es_eur_kwh": 0.0774,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 26,
+      "hour_label": "25:00-24:00",
+      "price_pt_eur_mwh": 92.0,
+      "price_es_eur_mwh": 92.0,
+      "price_es_eur_kwh": 0.092,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 27,
+      "hour_label": "26:00-24:00",
+      "price_pt_eur_mwh": 99.88,
+      "price_es_eur_mwh": 99.88,
+      "price_es_eur_kwh": 0.09988,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 28,
+      "hour_label": "27:00-24:00",
+      "price_pt_eur_mwh": 109.77,
+      "price_es_eur_mwh": 109.77,
+      "price_es_eur_kwh": 0.10977,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 29,
+      "hour_label": "28:00-24:00",
+      "price_pt_eur_mwh": 135.0,
+      "price_es_eur_mwh": 135.0,
+      "price_es_eur_kwh": 0.135,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 30,
+      "hour_label": "29:00-24:00",
+      "price_pt_eur_mwh": 166.0,
+      "price_es_eur_mwh": 166.0,
+      "price_es_eur_kwh": 0.166,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 31,
+      "hour_label": "30:00-24:00",
+      "price_pt_eur_mwh": 177.37,
+      "price_es_eur_mwh": 177.37,
+      "price_es_eur_kwh": 0.17737,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 32,
+      "hour_label": "31:00-24:00",
+      "price_pt_eur_mwh": 178.96,
+      "price_es_eur_mwh": 178.96,
+      "price_es_eur_kwh": 0.17896,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 33,
+      "hour_label": "32:00-24:00",
+      "price_pt_eur_mwh": 190.0,
+      "price_es_eur_mwh": 190.0,
+      "price_es_eur_kwh": 0.19,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 34,
+      "hour_label": "33:00-24:00",
+      "price_pt_eur_mwh": 193.99,
+      "price_es_eur_mwh": 193.99,
+      "price_es_eur_kwh": 0.19399,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 35,
+      "hour_label": "34:00-24:00",
+      "price_pt_eur_mwh": 185.0,
+      "price_es_eur_mwh": 185.0,
+      "price_es_eur_kwh": 0.185,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 36,
+      "hour_label": "35:00-24:00",
+      "price_pt_eur_mwh": 178.96,
+      "price_es_eur_mwh": 178.96,
+      "price_es_eur_kwh": 0.17896,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 37,
+      "hour_label": "36:00-24:00",
+      "price_pt_eur_mwh": 174.28,
+      "price_es_eur_mwh": 174.28,
+      "price_es_eur_kwh": 0.17428,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 38,
+      "hour_label": "37:00-24:00",
+      "price_pt_eur_mwh": 150.0,
+      "price_es_eur_mwh": 150.0,
+      "price_es_eur_kwh": 0.15,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 39,
+      "hour_label": "38:00-24:00",
+      "price_pt_eur_mwh": 134.0,
+      "price_es_eur_mwh": 134.0,
+      "price_es_eur_kwh": 0.134,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 40,
+      "hour_label": "39:00-24:00",
+      "price_pt_eur_mwh": 108.47,
+      "price_es_eur_mwh": 108.47,
+      "price_es_eur_kwh": 0.10847,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 41,
+      "hour_label": "40:00-24:00",
+      "price_pt_eur_mwh": 106.57,
+      "price_es_eur_mwh": 106.57,
+      "price_es_eur_kwh": 0.10657,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 42,
+      "hour_label": "41:00-24:00",
+      "price_pt_eur_mwh": 94.66,
+      "price_es_eur_mwh": 94.66,
+      "price_es_eur_kwh": 0.09466,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 43,
+      "hour_label": "42:00-24:00",
+      "price_pt_eur_mwh": 91.12,
+      "price_es_eur_mwh": 91.12,
+      "price_es_eur_kwh": 0.09112,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 44,
+      "hour_label": "43:00-24:00",
+      "price_pt_eur_mwh": 80.0,
+      "price_es_eur_mwh": 80.0,
+      "price_es_eur_kwh": 0.08,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 45,
+      "hour_label": "44:00-24:00",
+      "price_pt_eur_mwh": 75.54,
+      "price_es_eur_mwh": 75.54,
+      "price_es_eur_kwh": 0.07554,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 46,
+      "hour_label": "45:00-24:00",
+      "price_pt_eur_mwh": 72.3,
+      "price_es_eur_mwh": 72.3,
+      "price_es_eur_kwh": 0.0723,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 47,
+      "hour_label": "46:00-24:00",
+      "price_pt_eur_mwh": 70.2,
+      "price_es_eur_mwh": 70.2,
+      "price_es_eur_kwh": 0.0702,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 48,
+      "hour_label": "47:00-24:00",
+      "price_pt_eur_mwh": 70.0,
+      "price_es_eur_mwh": 70.0,
+      "price_es_eur_kwh": 0.07,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 49,
+      "hour_label": "48:00-24:00",
+      "price_pt_eur_mwh": 70.0,
+      "price_es_eur_mwh": 70.0,
+      "price_es_eur_kwh": 0.07,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 50,
+      "hour_label": "49:00-24:00",
+      "price_pt_eur_mwh": 68.65,
+      "price_es_eur_mwh": 68.65,
+      "price_es_eur_kwh": 0.06865,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 51,
+      "hour_label": "50:00-24:00",
+      "price_pt_eur_mwh": 70.2,
+      "price_es_eur_mwh": 70.2,
+      "price_es_eur_kwh": 0.0702,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 52,
+      "hour_label": "51:00-24:00",
+      "price_pt_eur_mwh": 70.2,
+      "price_es_eur_mwh": 70.2,
+      "price_es_eur_kwh": 0.0702,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 53,
+      "hour_label": "52:00-24:00",
+      "price_pt_eur_mwh": 70.0,
+      "price_es_eur_mwh": 70.0,
+      "price_es_eur_kwh": 0.07,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 54,
+      "hour_label": "53:00-24:00",
+      "price_pt_eur_mwh": 70.0,
+      "price_es_eur_mwh": 70.0,
+      "price_es_eur_kwh": 0.07,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 55,
+      "hour_label": "54:00-24:00",
+      "price_pt_eur_mwh": 71.2,
+      "price_es_eur_mwh": 71.2,
+      "price_es_eur_kwh": 0.0712,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 56,
+      "hour_label": "55:00-24:00",
+      "price_pt_eur_mwh": 76.8,
+      "price_es_eur_mwh": 76.8,
+      "price_es_eur_kwh": 0.0768,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 57,
+      "hour_label": "56:00-24:00",
+      "price_pt_eur_mwh": 89.0,
+      "price_es_eur_mwh": 89.0,
+      "price_es_eur_kwh": 0.089,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 58,
+      "hour_label": "57:00-24:00",
+      "price_pt_eur_mwh": 92.94,
+      "price_es_eur_mwh": 92.94,
+      "price_es_eur_kwh": 0.09294,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 59,
+      "hour_label": "58:00-24:00",
+      "price_pt_eur_mwh": 95.0,
+      "price_es_eur_mwh": 95.0,
+      "price_es_eur_kwh": 0.095,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 60,
+      "hour_label": "59:00-24:00",
+      "price_pt_eur_mwh": 103.06,
+      "price_es_eur_mwh": 103.06,
+      "price_es_eur_kwh": 0.10306,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 61,
+      "hour_label": "60:00-24:00",
+      "price_pt_eur_mwh": 105.18,
+      "price_es_eur_mwh": 105.18,
+      "price_es_eur_kwh": 0.10518,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 62,
+      "hour_label": "61:00-24:00",
+      "price_pt_eur_mwh": 130.0,
+      "price_es_eur_mwh": 130.0,
+      "price_es_eur_kwh": 0.13,
+      "level": "cheap"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 63,
+      "hour_label": "62:00-24:00",
+      "price_pt_eur_mwh": 151.07,
+      "price_es_eur_mwh": 151.07,
+      "price_es_eur_kwh": 0.15107,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 64,
+      "hour_label": "63:00-24:00",
+      "price_pt_eur_mwh": 177.37,
+      "price_es_eur_mwh": 177.37,
+      "price_es_eur_kwh": 0.17737,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 65,
+      "hour_label": "64:00-24:00",
+      "price_pt_eur_mwh": 178.87,
+      "price_es_eur_mwh": 178.87,
+      "price_es_eur_kwh": 0.17887,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 66,
+      "hour_label": "65:00-24:00",
+      "price_pt_eur_mwh": 187.09,
+      "price_es_eur_mwh": 187.09,
+      "price_es_eur_kwh": 0.18709,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 67,
+      "hour_label": "66:00-24:00",
+      "price_pt_eur_mwh": 206.59,
+      "price_es_eur_mwh": 206.59,
+      "price_es_eur_kwh": 0.20659,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 68,
+      "hour_label": "67:00-24:00",
+      "price_pt_eur_mwh": 247.17,
+      "price_es_eur_mwh": 247.17,
+      "price_es_eur_kwh": 0.24717,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 69,
+      "hour_label": "68:00-24:00",
+      "price_pt_eur_mwh": 221.64,
+      "price_es_eur_mwh": 221.64,
+      "price_es_eur_kwh": 0.22164,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 70,
+      "hour_label": "69:00-24:00",
+      "price_pt_eur_mwh": 250.8,
+      "price_es_eur_mwh": 250.8,
+      "price_es_eur_kwh": 0.2508,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 71,
+      "hour_label": "70:00-24:00",
+      "price_pt_eur_mwh": 270.23,
+      "price_es_eur_mwh": 270.23,
+      "price_es_eur_kwh": 0.27023,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 72,
+      "hour_label": "71:00-24:00",
+      "price_pt_eur_mwh": 300.0,
+      "price_es_eur_mwh": 300.0,
+      "price_es_eur_kwh": 0.3,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 73,
+      "hour_label": "72:00-24:00",
+      "price_pt_eur_mwh": 261.31,
+      "price_es_eur_mwh": 261.31,
+      "price_es_eur_kwh": 0.26131,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 74,
+      "hour_label": "73:00-24:00",
+      "price_pt_eur_mwh": 266.49,
+      "price_es_eur_mwh": 266.49,
+      "price_es_eur_kwh": 0.26649,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 75,
+      "hour_label": "74:00-24:00",
+      "price_pt_eur_mwh": 290.49,
+      "price_es_eur_mwh": 290.49,
+      "price_es_eur_kwh": 0.29049,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 76,
+      "hour_label": "75:00-24:00",
+      "price_pt_eur_mwh": 299.0,
+      "price_es_eur_mwh": 299.0,
+      "price_es_eur_kwh": 0.299,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 77,
+      "hour_label": "76:00-24:00",
+      "price_pt_eur_mwh": 261.31,
+      "price_es_eur_mwh": 261.31,
+      "price_es_eur_kwh": 0.26131,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 78,
+      "hour_label": "77:00-24:00",
+      "price_pt_eur_mwh": 261.42,
+      "price_es_eur_mwh": 261.42,
+      "price_es_eur_kwh": 0.26142,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 79,
+      "hour_label": "78:00-24:00",
+      "price_pt_eur_mwh": 262.87,
+      "price_es_eur_mwh": 262.87,
+      "price_es_eur_kwh": 0.26287,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 80,
+      "hour_label": "79:00-24:00",
+      "price_pt_eur_mwh": 266.49,
+      "price_es_eur_mwh": 266.49,
+      "price_es_eur_kwh": 0.26649,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 81,
+      "hour_label": "80:00-24:00",
+      "price_pt_eur_mwh": 261.42,
+      "price_es_eur_mwh": 261.42,
+      "price_es_eur_kwh": 0.26142,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 82,
+      "hour_label": "81:00-24:00",
+      "price_pt_eur_mwh": 265.22,
+      "price_es_eur_mwh": 265.22,
+      "price_es_eur_kwh": 0.26522,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 83,
+      "hour_label": "82:00-24:00",
+      "price_pt_eur_mwh": 261.31,
+      "price_es_eur_mwh": 261.31,
+      "price_es_eur_kwh": 0.26131,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 84,
+      "hour_label": "83:00-24:00",
+      "price_pt_eur_mwh": 250.92,
+      "price_es_eur_mwh": 250.92,
+      "price_es_eur_kwh": 0.25092,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 85,
+      "hour_label": "84:00-24:00",
+      "price_pt_eur_mwh": 260.31,
+      "price_es_eur_mwh": 260.31,
+      "price_es_eur_kwh": 0.26031,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 86,
+      "hour_label": "85:00-24:00",
+      "price_pt_eur_mwh": 260.31,
+      "price_es_eur_mwh": 260.31,
+      "price_es_eur_kwh": 0.26031,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 87,
+      "hour_label": "86:00-24:00",
+      "price_pt_eur_mwh": 227.14,
+      "price_es_eur_mwh": 227.14,
+      "price_es_eur_kwh": 0.22714,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 88,
+      "hour_label": "87:00-24:00",
+      "price_pt_eur_mwh": 214.69,
+      "price_es_eur_mwh": 214.69,
+      "price_es_eur_kwh": 0.21469,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 89,
+      "hour_label": "88:00-24:00",
+      "price_pt_eur_mwh": 219.6,
+      "price_es_eur_mwh": 219.6,
+      "price_es_eur_kwh": 0.2196,
+      "level": "expensive"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 90,
+      "hour_label": "89:00-24:00",
+      "price_pt_eur_mwh": 205.22,
+      "price_es_eur_mwh": 205.22,
+      "price_es_eur_kwh": 0.20522,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 91,
+      "hour_label": "90:00-24:00",
+      "price_pt_eur_mwh": 201.15,
+      "price_es_eur_mwh": 201.15,
+      "price_es_eur_kwh": 0.20115,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 92,
+      "hour_label": "91:00-24:00",
+      "price_pt_eur_mwh": 201.15,
+      "price_es_eur_mwh": 201.15,
+      "price_es_eur_kwh": 0.20115,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 93,
+      "hour_label": "92:00-24:00",
+      "price_pt_eur_mwh": 209.9,
+      "price_es_eur_mwh": 209.9,
+      "price_es_eur_kwh": 0.2099,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 94,
+      "hour_label": "93:00-24:00",
+      "price_pt_eur_mwh": 200.87,
+      "price_es_eur_mwh": 200.87,
+      "price_es_eur_kwh": 0.20087,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 95,
+      "hour_label": "94:00-24:00",
+      "price_pt_eur_mwh": 195.0,
+      "price_es_eur_mwh": 195.0,
+      "price_es_eur_kwh": 0.195,
+      "level": "medium"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "day": 20,
+      "hour": 96,
+      "hour_label": "95:00-24:00",
+      "price_pt_eur_mwh": 187.16,
+      "price_es_eur_mwh": 187.16,
+      "price_es_eur_kwh": 0.18716,
+      "level": "medium"
+    }
+  ]
+}
